@@ -13,7 +13,7 @@
             <rect key="frame" x="0.0" y="0.0" width="300" height="240"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5nT-ae-L8x">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tonjiru" translatesAutoresizingMaskIntoConstraints="NO" id="5nT-ae-L8x">
                     <rect key="frame" x="0.0" y="0.0" width="300" height="125"/>
                     <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
@@ -35,9 +35,8 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zai-Ho-PC1">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inco" translatesAutoresizingMaskIntoConstraints="NO" id="zai-Ho-PC1">
                     <rect key="frame" x="0.0" y="210" width="25" height="25"/>
-                    <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="8YJ-LO-ojk"/>
                         <constraint firstAttribute="width" constant="25" id="vrZ-IN-ZJn"/>
@@ -75,4 +74,8 @@
             <point key="canvasLocation" x="134.78260869565219" y="439.95535714285711"/>
         </view>
     </objects>
+    <resources>
+        <image name="inco" width="260" height="260"/>
+        <image name="tonjiru" width="1600" height="1059"/>
+    </resources>
 </document>
