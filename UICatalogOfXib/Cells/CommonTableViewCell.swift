@@ -9,10 +9,15 @@
 import UIKit
 
 class CommonTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var imageTableViewCell: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        // 写真の左上・右上の角を丸くする
+        self.imageTableViewCell.layer.cornerRadius = 15
+        self.imageTableViewCell.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
