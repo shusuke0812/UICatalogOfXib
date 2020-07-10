@@ -9,7 +9,7 @@ Xibを使った実装例
 ## 概要
 <table border="0">
 <tr>
-<td><img width="300" alt="normal_view" src="https://user-images.githubusercontent.com/33107697/87173108-35ef7500-c310-11ea-9b5d-85640cd6c8d6.png"></td>
-<td><img width="300" alt="table_view" src="https://user-images.githubusercontent.com/33107697/87173893-5d930d00-c311-11ea-8e24-56b4d6c6b159.png"></td>
+<td><img width="300" alt="normal_view-min" src="https://user-images.githubusercontent.com/33107697/87175266-61279380-c313-11ea-91df-442b0c0e05a7.png"></td>
+<td><img width="300" alt="table_view-min" src="https://user-images.githubusercontent.com/33107697/87175384-87e5ca00-c313-11ea-8142-2e3b950ea6a1.png"></td>
 </tr>
 </table>
