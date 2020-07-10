@@ -9,7 +9,9 @@
 import UIKit
 
 class CommonCellView: UIView {
-
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadNib()
@@ -22,6 +24,11 @@ class CommonCellView: UIView {
     func loadNib() {
         let view = Bundle.main.loadNibNamed("CommonCellView", owner: self, options: nil)?.first as! UIView
         view.frame = self.bounds
+        
+        // 写真の左上・右上の角を丸くする
+        self.imageView.layer.cornerRadius = 15
+        self.imageView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        
         self.addSubview(view)
     }
 
