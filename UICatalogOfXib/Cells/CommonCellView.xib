@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommonCellView" customModule="UICatalogOfXib" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5nT-ae-L8x">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="125"/>
+                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="125" id="uTc-h6-r9C"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="豚汁の作り方" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRo-QA-kwt">
+                    <rect key="frame" x="0.0" y="133" width="284" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="長ネギの甘味を活かした豚汁づくり！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UD8-IU-nX2">
+                    <rect key="frame" x="0.0" y="157" width="300" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="mik-ac-yFI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zai-Ho-PC1">
+                    <rect key="frame" x="0.0" y="210" width="25" height="25"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="8YJ-LO-ojk"/>
+                        <constraint firstAttribute="width" constant="25" id="vrZ-IN-ZJn"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自炊屋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9x-QM-e75">
+                    <rect key="frame" x="41" y="214" width="243" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5nT-ae-L8x" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1Dk-aP-UTQ"/>
+                <constraint firstItem="HRo-QA-kwt" firstAttribute="top" secondItem="5nT-ae-L8x" secondAttribute="bottom" constant="8" id="4ha-mk-iEG"/>
+                <constraint firstItem="5nT-ae-L8x" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="4re-Vc-Gr1"/>
+                <constraint firstItem="zai-Ho-PC1" firstAttribute="top" secondItem="UD8-IU-nX2" secondAttribute="bottom" constant="8" id="6k3-rd-Iz5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="D9x-QM-e75" secondAttribute="trailing" constant="16" id="9kj-t9-HEr"/>
+                <constraint firstItem="5nT-ae-L8x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9tv-Zg-JbD"/>
+                <constraint firstItem="UD8-IU-nX2" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Bnw-3v-fsG"/>
+                <constraint firstItem="HRo-QA-kwt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MXZ-1j-VTz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="D9x-QM-e75" secondAttribute="bottom" constant="9" id="b7G-kK-6gO"/>
+                <constraint firstItem="D9x-QM-e75" firstAttribute="leading" secondItem="zai-Ho-PC1" secondAttribute="trailing" constant="16" id="b7y-j8-Izb"/>
+                <constraint firstItem="D9x-QM-e75" firstAttribute="top" secondItem="UD8-IU-nX2" secondAttribute="bottom" constant="12" id="bIQ-uh-hR8"/>
+                <constraint firstItem="zai-Ho-PC1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="clh-7g-Htx"/>
+                <constraint firstItem="UD8-IU-nX2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eT4-b3-iSH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HRo-QA-kwt" secondAttribute="trailing" constant="16" id="h37-77-0lc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zai-Ho-PC1" secondAttribute="bottom" constant="5" id="rII-wF-xVl"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="134.78260869565219" y="439.95535714285711"/>
+        </view>
+    </objects>
+</document>

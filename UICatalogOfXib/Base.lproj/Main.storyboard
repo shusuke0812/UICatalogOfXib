@@ -56,7 +56,21 @@
                     <view key="view" contentMode="scaleToFill" id="mFh-pu-7Zf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0E8-s8-gh7" customClass="CommonCellView" customModule="UICatalogOfXib" customModuleProvider="target">
+                                <rect key="frame" x="57" y="328" width="300" height="240"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="vSx-e5-wdN"/>
+                                    <constraint firstAttribute="width" constant="300" id="zFv-AJ-gsu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0E8-s8-gh7" firstAttribute="centerX" secondItem="mFh-pu-7Zf" secondAttribute="centerX" id="coX-d4-ipR"/>
+                            <constraint firstItem="0E8-s8-gh7" firstAttribute="centerY" secondItem="mFh-pu-7Zf" secondAttribute="centerY" id="dR7-XM-qp1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XQf-iU-eY1"/>
                     </view>
                     <navigationItem key="navigationItem" id="igD-ca-hgy"/>
