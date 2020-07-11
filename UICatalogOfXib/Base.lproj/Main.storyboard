@@ -139,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="200.00000000000003" y="545.75892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Scroll View Controller-->
         <scene sceneID="66K-9K-4TV">
             <objects>
-                <viewController id="jPW-dh-3Nd" sceneMemberID="viewController">
+                <viewController id="jPW-dh-3Nd" customClass="ScrollViewController" customModule="UICatalogOfXib" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BMP-ml-hON">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
