@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9C17189B24B8B5BD002307F1 /* CommonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C17189924B8B5BD002307F1 /* CommonTableViewCell.swift */; };
 		9C17189C24B8B5BD002307F1 /* CommonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C17189A24B8B5BD002307F1 /* CommonTableViewCell.xib */; };
+		9C8A24FD24B9B301007F0D8E /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8A24FC24B9B301007F0D8E /* ScrollViewController.swift */; };
 		9C9871C624B874AA00BD30A4 /* CommonCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9871C424B874AA00BD30A4 /* CommonCellView.swift */; };
 		9C9871C724B874AA00BD30A4 /* CommonCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9871C524B874AA00BD30A4 /* CommonCellView.xib */; };
 		9CC228A524B8638000F8421A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC228A424B8638000F8421A /* AppDelegate.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		9C17189924B8B5BD002307F1 /* CommonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTableViewCell.swift; sourceTree = "<group>"; };
 		9C17189A24B8B5BD002307F1 /* CommonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonTableViewCell.xib; sourceTree = "<group>"; };
+		9C8A24FC24B9B301007F0D8E /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		9C9871C424B874AA00BD30A4 /* CommonCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCellView.swift; sourceTree = "<group>"; };
 		9C9871C524B874AA00BD30A4 /* CommonCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonCellView.xib; sourceTree = "<group>"; };
 		9CC228A124B8638000F8421A /* UICatalogOfXib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICatalogOfXib.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +160,7 @@
 			children = (
 				9CC228D524B86A8400F8421A /* NormalViewController.swift */,
 				9CC228D724B86A9600F8421A /* TableViewController.swift */,
+				9C8A24FC24B9B301007F0D8E /* ScrollViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				9CC228A924B8638000F8421A /* ViewController.swift in Sources */,
 				9C9871C624B874AA00BD30A4 /* CommonCellView.swift in Sources */,
 				9C17189B24B8B5BD002307F1 /* CommonTableViewCell.swift in Sources */,
+				9C8A24FD24B9B301007F0D8E /* ScrollViewController.swift in Sources */,
 				9CC228D624B86A8400F8421A /* NormalViewController.swift in Sources */,
 				9CC228A524B8638000F8421A /* AppDelegate.swift in Sources */,
 				9CC228D824B86A9600F8421A /* TableViewController.swift in Sources */,
