@@ -62,7 +62,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0E8-s8-gh7" customClass="CommonCellView" customModule="UICatalogOfXib" customModuleProvider="target">
                                 <rect key="frame" x="57" y="328" width="300" height="240"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="vSx-e5-wdN"/>
                                     <constraint firstAttribute="width" constant="300" id="zFv-AJ-gsu"/>
@@ -153,7 +153,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HGB-fc-IKa">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="960"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uog-jV-hSr">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uog-jV-hSr" customClass="CommonCellView" customModule="UICatalogOfXib" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="240"/>
                                                 <color key="backgroundColor" red="1" green="0.7658593577566184" blue="0.55775397636502067" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -167,7 +167,7 @@
                                                     <constraint firstAttribute="height" constant="240" id="f4K-AR-kMg"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGA-CB-LYK">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGA-CB-LYK" customClass="CommonCellView" customModule="UICatalogOfXib" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="480" width="414" height="240"/>
                                                 <color key="backgroundColor" red="1" green="0.84739611223501898" blue="0.91824921498494483" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
