@@ -18,6 +18,7 @@ class XibView: UIView {
         self.loadNib()
     }
     private func loadNib() {
+        // 自身と同じclass名のxibを読み込む
         let className: String = String(describing: type(of: self))
         let view: UIView = Bundle.main.loadNibNamed(className, owner: self, options: nil)?.first as! UIView
         view.backgroundColor = .white
