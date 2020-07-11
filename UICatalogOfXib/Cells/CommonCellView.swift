@@ -8,28 +8,25 @@
 
 import UIKit
 
-class CommonCellView: UIView {
+class CommonCellView: XibView {
     
     @IBOutlet weak var imageView: UIImageView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        loadNib()
+        self.setImageShape()
     }
-    
-    required init?(coder aDecoder: NSCoder){
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        loadNib()
+        self.setImageShape()
     }
-    func loadNib() {
-        let view = Bundle.main.loadNibNamed("CommonCellView", owner: self, options: nil)?.first as! UIView
-        view.frame = self.bounds
-        
+}
+
+
+extension CommonCellView {
+    private func setImageShape() {
         // 写真の左上・右上の角を丸くする
         self.imageView.layer.cornerRadius = 15
         self.imageView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        
-        self.addSubview(view)
     }
-
 }
