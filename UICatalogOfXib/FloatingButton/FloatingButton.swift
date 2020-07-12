@@ -8,14 +8,11 @@
 
 import UIKit
 
-class FloatingButton: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+class FloatingButton: XibView {
+   
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var buttonName: UILabel!
+    
+    @IBAction func buttonTap(_ sender: Any) {
     }
-    */
-
 }
