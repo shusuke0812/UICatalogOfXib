@@ -197,12 +197,25 @@
                                 <viewLayoutGuide key="contentLayoutGuide" id="dFt-8g-VWu"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="uw8-F3-RGP"/>
                             </scrollView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xds-NL-DKk">
+                                <rect key="frame" x="294" y="997" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="4BG-9Q-Dof"/>
+                                    <constraint firstAttribute="height" constant="80" id="UqF-F3-YOh"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="NRJ-j1-ppA" kind="embed" id="9T8-KN-dpk"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="qzg-tD-DFe" firstAttribute="bottom" secondItem="Xds-NL-DKk" secondAttribute="bottom" constant="40" id="Bm2-cn-Ksj"/>
                             <constraint firstItem="Dy3-7a-bl9" firstAttribute="leading" secondItem="qzg-tD-DFe" secondAttribute="leading" id="KQk-mX-Srf"/>
                             <constraint firstItem="qzg-tD-DFe" firstAttribute="bottom" secondItem="Dy3-7a-bl9" secondAttribute="bottom" id="TYj-UG-Dz5"/>
                             <constraint firstItem="qzg-tD-DFe" firstAttribute="trailing" secondItem="Dy3-7a-bl9" secondAttribute="trailing" id="VA1-0h-o1D"/>
+                            <constraint firstItem="qzg-tD-DFe" firstAttribute="trailing" secondItem="Xds-NL-DKk" secondAttribute="trailing" constant="40" id="X6l-nT-DOA"/>
                             <constraint firstItem="Dy3-7a-bl9" firstAttribute="top" secondItem="qzg-tD-DFe" secondAttribute="top" id="eBL-iv-hLH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qzg-tD-DFe"/>
@@ -212,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1S-tO-djG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1193" y="1392"/>
+            <point key="canvasLocation" x="1192.753623188406" y="1391.5178571428571"/>
         </scene>
         <!--Scroll View-->
         <scene sceneID="ZJH-Ut-V9b">
@@ -232,6 +245,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jiP-6L-dcL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1192.753623188406" y="545.75892857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mme-2S-9m7">
+            <objects>
+                <viewController id="NRJ-j1-ppA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j8h-Xc-Dr5">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5i-QK-ZN3" customClass="FloatingButton" customModule="UICatalogOfXib" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="e5i-QK-ZN3" firstAttribute="top" secondItem="j8h-Xc-Dr5" secondAttribute="top" id="01c-Iw-oY6"/>
+                            <constraint firstItem="e5i-QK-ZN3" firstAttribute="leading" secondItem="j8h-Xc-Dr5" secondAttribute="leading" id="3wK-WW-gfe"/>
+                            <constraint firstAttribute="bottom" secondItem="e5i-QK-ZN3" secondAttribute="bottom" id="9ch-yt-63Y"/>
+                            <constraint firstAttribute="trailing" secondItem="e5i-QK-ZN3" secondAttribute="trailing" id="A1i-Vu-nlc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Jj-z8-qQV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFw-Nl-C2l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1739" y="1583"/>
         </scene>
     </scenes>
     <resources>
