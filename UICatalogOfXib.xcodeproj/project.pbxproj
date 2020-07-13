@@ -15,6 +15,8 @@
 		9C96684324BAEF3B00598AD9 /* FloatingButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C96684224BAEF3B00598AD9 /* FloatingButton.xib */; };
 		9C9871C624B874AA00BD30A4 /* CommonCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9871C424B874AA00BD30A4 /* CommonCellView.swift */; };
 		9C9871C724B874AA00BD30A4 /* CommonCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9871C524B874AA00BD30A4 /* CommonCellView.xib */; };
+		9CB6BEE324BC7CA50022336C /* PostRecipeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB6BEE224BC7CA50022336C /* PostRecipeViewController.storyboard */; };
+		9CB6BEE524BC7CC10022336C /* PostRecipeViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6BEE424BC7CC10022336C /* PostRecipeViewControllerViewController.swift */; };
 		9CC228A524B8638000F8421A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC228A424B8638000F8421A /* AppDelegate.swift */; };
 		9CC228A724B8638000F8421A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC228A624B8638000F8421A /* SceneDelegate.swift */; };
 		9CC228A924B8638000F8421A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC228A824B8638000F8421A /* ViewController.swift */; };
@@ -53,6 +55,8 @@
 		9C96684224BAEF3B00598AD9 /* FloatingButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FloatingButton.xib; sourceTree = "<group>"; };
 		9C9871C424B874AA00BD30A4 /* CommonCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCellView.swift; sourceTree = "<group>"; };
 		9C9871C524B874AA00BD30A4 /* CommonCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonCellView.xib; sourceTree = "<group>"; };
+		9CB6BEE224BC7CA50022336C /* PostRecipeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostRecipeViewController.storyboard; sourceTree = "<group>"; };
+		9CB6BEE424BC7CC10022336C /* PostRecipeViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRecipeViewControllerViewController.swift; sourceTree = "<group>"; };
 		9CC228A124B8638000F8421A /* UICatalogOfXib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICatalogOfXib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC228A424B8638000F8421A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CC228A624B8638000F8421A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +121,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		9CB6BEE124BC7C360022336C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9CB6BEE224BC7CA50022336C /* PostRecipeViewController.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		9CC2289824B8638000F8421A = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +152,7 @@
 		9CC228A324B8638000F8421A /* UICatalogOfXib */ = {
 			isa = PBXGroup;
 			children = (
+				9CB6BEE124BC7C360022336C /* Storyboard */,
 				9C96683F24BAEEE000598AD9 /* FloatingButton */,
 				9C9871B724B871F800BD30A4 /* Cells */,
 				9CC228D424B86A5600F8421A /* ViewController */,
@@ -178,6 +191,7 @@
 				9CC228D524B86A8400F8421A /* NormalViewController.swift */,
 				9CC228D724B86A9600F8421A /* TableViewController.swift */,
 				9C8A24FC24B9B301007F0D8E /* ScrollViewController.swift */,
+				9CB6BEE424BC7CC10022336C /* PostRecipeViewControllerViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -286,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB6BEE324BC7CA50022336C /* PostRecipeViewController.storyboard in Resources */,
 				9C17189C24B8B5BD002307F1 /* CommonTableViewCell.xib in Resources */,
 				9CC228B124B8638400F8421A /* LaunchScreen.storyboard in Resources */,
 				9C9871C724B874AA00BD30A4 /* CommonCellView.xib in Resources */,
@@ -319,6 +334,7 @@
 				9CC228A924B8638000F8421A /* ViewController.swift in Sources */,
 				9C9871C624B874AA00BD30A4 /* CommonCellView.swift in Sources */,
 				9C17189B24B8B5BD002307F1 /* CommonTableViewCell.swift in Sources */,
+				9CB6BEE524BC7CC10022336C /* PostRecipeViewControllerViewController.swift in Sources */,
 				9C8A24FD24B9B301007F0D8E /* ScrollViewController.swift in Sources */,
 				9CC228D624B86A8400F8421A /* NormalViewController.swift in Sources */,
 				9CC228A524B8638000F8421A /* AppDelegate.swift in Sources */,
