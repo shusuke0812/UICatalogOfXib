@@ -9,7 +9,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FloatingButton" customModule="UICatalogOfXib" customModuleProvider="target">
             <connections>
-                <outlet property="button" destination="dWG-XR-hN0" id="mFa-qX-Iyl"/>
                 <outlet property="buttonName" destination="EDd-Py-Tgm" id="86M-t5-2Ly"/>
             </connections>
         </placeholder>
@@ -26,9 +25,6 @@
                         <constraint firstAttribute="width" constant="60" id="KjE-Mp-pLs"/>
                     </constraints>
                     <state key="normal" image="floating_button"/>
-                    <connections>
-                        <action selector="buttonTap:" destination="-1" eventType="touchUpInside" id="P5e-zA-bTk"/>
-                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="レシピ投稿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDd-Py-Tgm">
                     <rect key="frame" x="14" y="68" width="52" height="12"/>
@@ -53,13 +49,13 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outletCollection property="gestureRecognizers" destination="8bW-AC-sQi" appends="YES" id="NNu-KO-cS0"/>
+                <outletCollection property="gestureRecognizers" destination="CSy-TQ-wdN" appends="YES" id="H7I-TI-9cf"/>
             </connections>
-            <point key="canvasLocation" x="213" y="96"/>
+            <point key="canvasLocation" x="211.59420289855075" y="95.758928571428569"/>
         </view>
-        <tapGestureRecognizer id="8bW-AC-sQi">
+        <tapGestureRecognizer id="CSy-TQ-wdN">
             <connections>
-                <action selector="cellTap:" destination="-1" id="f3r-hb-PRX"/>
+                <action selector="cellTap:" destination="-1" id="M12-ut-TPe"/>
             </connections>
         </tapGestureRecognizer>
     </objects>
