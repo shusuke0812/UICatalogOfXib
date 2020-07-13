@@ -15,4 +15,7 @@ class FloatingButton: XibView {
     
     @IBAction func buttonTap(_ sender: Any) {
     }
+    @IBAction func cellTap(_ sender: Any) {
+    }
 }
+

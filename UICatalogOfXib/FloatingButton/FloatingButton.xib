@@ -39,6 +39,7 @@
                 </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dWG-XR-hN0" secondAttribute="trailing" constant="10" id="0cL-Xi-2Fi"/>
                 <constraint firstItem="dWG-XR-hN0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="3oQ-em-iHT"/>
@@ -51,8 +52,16 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="8bW-AC-sQi" appends="YES" id="NNu-KO-cS0"/>
+            </connections>
             <point key="canvasLocation" x="213" y="96"/>
         </view>
+        <tapGestureRecognizer id="8bW-AC-sQi">
+            <connections>
+                <action selector="cellTap:" destination="-1" id="f3r-hb-PRX"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="floating_button" width="102" height="102"/>
