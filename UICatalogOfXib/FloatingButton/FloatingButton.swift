@@ -13,7 +13,7 @@ class FloatingButton: XibView {
     @IBOutlet weak var buttonName: UILabel!
     
     @IBAction func cellTap(_ sender: Any) {
-        print("タップされました")
+        print("レシピ投稿ボタンがタップされました")
     }
 }
 
