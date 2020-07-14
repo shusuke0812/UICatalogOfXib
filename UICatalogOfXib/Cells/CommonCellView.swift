@@ -8,9 +8,14 @@
 
 import UIKit
 
+protocol CommonCellViewDelegate: class {
+    func didTapImage()
+}
+
 class CommonCellView: XibView {
     
     @IBOutlet weak var imageView: UIImageView!
+    internal weak var delegate: CommonCellViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -20,6 +25,12 @@ class CommonCellView: XibView {
         super.init(coder: aDecoder)
         self.setImageShape()
     }
+    @IBAction func didTapCell(_ sender: Any) {
+        // セル全体をタップしたらそのことをdelegateへ伝える
+        // 継承元（viewController等）でdidTapImageメソッド内の処理は定義する
+        self.delegate?.didTapImage()
+    }
+    
 }
 
 

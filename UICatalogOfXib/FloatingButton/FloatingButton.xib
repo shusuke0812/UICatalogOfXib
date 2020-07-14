@@ -25,6 +25,9 @@
                         <constraint firstAttribute="width" constant="60" id="KjE-Mp-pLs"/>
                     </constraints>
                     <state key="normal" image="floating_button"/>
+                    <connections>
+                        <action selector="buttonTap:" destination="-1" eventType="touchUpInside" id="4jW-Hq-Yxt"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="レシピ投稿" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDd-Py-Tgm">
                     <rect key="frame" x="14" y="68" width="52" height="12"/>
@@ -48,16 +51,8 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <connections>
-                <outletCollection property="gestureRecognizers" destination="CSy-TQ-wdN" appends="YES" id="H7I-TI-9cf"/>
-            </connections>
             <point key="canvasLocation" x="211.59420289855075" y="95.758928571428569"/>
         </view>
-        <tapGestureRecognizer id="CSy-TQ-wdN">
-            <connections>
-                <action selector="cellTap:" destination="-1" id="M12-ut-TPe"/>
-            </connections>
-        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="floating_button" width="102" height="102"/>

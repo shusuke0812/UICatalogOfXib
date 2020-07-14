@@ -10,21 +10,26 @@ import UIKit
 
 class NormalViewController: UIViewController {
 
+    @IBOutlet weak var commonCellView: CommonCellView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationItem.title = "Xib Files on Normal View"
+        commonCellView.delegate = self
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension NormalViewController {
+    private func transitionPostRecipe() {
+        let s = UIStoryboard(name:"PostRecipeViewController", bundle: nil)
+        let vc = s.instantiateInitialViewController()!
+        self.present(vc, animated: true, completion: nil)
     }
-    */
+}
 
+extension NormalViewController: CommonCellViewDelegate {
+    func didTapImage() {
+        self.transitionPostRecipe()
+    }
 }

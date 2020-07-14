@@ -17,6 +17,7 @@
 		9C9871C724B874AA00BD30A4 /* CommonCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9871C524B874AA00BD30A4 /* CommonCellView.xib */; };
 		9CB6BEE324BC7CA50022336C /* PostRecipeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB6BEE224BC7CA50022336C /* PostRecipeViewController.storyboard */; };
 		9CB6BEE524BC7CC10022336C /* PostRecipeViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6BEE424BC7CC10022336C /* PostRecipeViewControllerViewController.swift */; };
+		9CB6BEE724BCB73E0022336C /* FloatingButtonContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB6BEE624BCB73E0022336C /* FloatingButtonContainerViewController.swift */; };
 		9CC228A524B8638000F8421A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC228A424B8638000F8421A /* AppDelegate.swift */; };
 		9CC228A724B8638000F8421A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC228A624B8638000F8421A /* SceneDelegate.swift */; };
 		9CC228A924B8638000F8421A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC228A824B8638000F8421A /* ViewController.swift */; };
@@ -57,6 +58,7 @@
 		9C9871C524B874AA00BD30A4 /* CommonCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonCellView.xib; sourceTree = "<group>"; };
 		9CB6BEE224BC7CA50022336C /* PostRecipeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostRecipeViewController.storyboard; sourceTree = "<group>"; };
 		9CB6BEE424BC7CC10022336C /* PostRecipeViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRecipeViewControllerViewController.swift; sourceTree = "<group>"; };
+		9CB6BEE624BCB73E0022336C /* FloatingButtonContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonContainerViewController.swift; sourceTree = "<group>"; };
 		9CC228A124B8638000F8421A /* UICatalogOfXib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICatalogOfXib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC228A424B8638000F8421A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CC228A624B8638000F8421A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				9CC228D724B86A9600F8421A /* TableViewController.swift */,
 				9C8A24FC24B9B301007F0D8E /* ScrollViewController.swift */,
 				9CB6BEE424BC7CC10022336C /* PostRecipeViewControllerViewController.swift */,
+				9CB6BEE624BCB73E0022336C /* FloatingButtonContainerViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB6BEE724BCB73E0022336C /* FloatingButtonContainerViewController.swift in Sources */,
 				9CC228A924B8638000F8421A /* ViewController.swift in Sources */,
 				9C9871C624B874AA00BD30A4 /* CommonCellView.swift in Sources */,
 				9C17189B24B8B5BD002307F1 /* CommonTableViewCell.swift in Sources */,

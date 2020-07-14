@@ -77,6 +77,9 @@
                         <viewLayoutGuide key="safeArea" id="XQf-iU-eY1"/>
                     </view>
                     <navigationItem key="navigationItem" id="igD-ca-hgy"/>
+                    <connections>
+                        <outlet property="commonCellView" destination="0E8-s8-gh7" id="PiA-Mh-EHw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cxc-C2-l9J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -246,10 +249,10 @@
             </objects>
             <point key="canvasLocation" x="1192.753623188406" y="545.75892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Floating Button Container View Controller-->
         <scene sceneID="mme-2S-9m7">
             <objects>
-                <viewController id="NRJ-j1-ppA" sceneMemberID="viewController">
+                <viewController id="NRJ-j1-ppA" customClass="FloatingButtonContainerViewController" customModule="UICatalogOfXib" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j8h-Xc-Dr5">
                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

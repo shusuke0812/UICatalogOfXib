@@ -8,12 +8,17 @@
 
 import UIKit
 
+
+protocol FloatingButtonDelegate: class {
+    func cellTap()
+}
+
 class FloatingButton: XibView {
    
     @IBOutlet weak var buttonName: UILabel!
+    internal weak var delegate: FloatingButtonDelegate! = nil
     
-    @IBAction func cellTap(_ sender: Any) {
-        print("レシピ投稿ボタンがタップされました")
+    @IBAction func buttonTap(_ sender: Any) {
     }
 }
 
