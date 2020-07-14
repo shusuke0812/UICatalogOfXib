@@ -8,9 +8,8 @@
 
 import UIKit
 
-
 protocol FloatingButtonDelegate: class {
-    func cellTap()
+    func didTapButton()
 }
 
 class FloatingButton: XibView {
@@ -19,6 +18,9 @@ class FloatingButton: XibView {
     internal weak var delegate: FloatingButtonDelegate! = nil
     
     @IBAction func buttonTap(_ sender: Any) {
+        // ボタンをタップしたらそのことをdelegateへ伝える
+        // 継承元（viewController等）でdidTapImageメソッド内の処理は定義する
+        self.delegate?.didTapButton()
     }
 }
 

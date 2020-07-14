@@ -253,7 +253,7 @@
         <scene sceneID="mme-2S-9m7">
             <objects>
                 <viewController id="NRJ-j1-ppA" customClass="FloatingButtonContainerViewController" customModule="UICatalogOfXib" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="j8h-Xc-Dr5">
+                    <view key="view" contentMode="scaleToFill" id="j8h-Xc-Dr5" customClass="FloatingButton" customModule="UICatalogOfXib" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -271,6 +271,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3Jj-z8-qQV"/>
                     </view>
+                    <connections>
+                        <outlet property="floatingButton" destination="j8h-Xc-Dr5" id="sXg-0Q-0VK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFw-Nl-C2l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
