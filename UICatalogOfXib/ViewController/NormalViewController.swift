@@ -20,6 +20,7 @@ class NormalViewController: UIViewController {
     }
 }
 
+// --- カスタムViewのタップイベントを元に実行するdelegateメソッド ---
 extension NormalViewController {
     private func transitionPostRecipe() {
         let s = UIStoryboard(name:"PostRecipeViewController", bundle: nil)
@@ -33,3 +34,4 @@ extension NormalViewController: CommonCellViewDelegate {
         self.transitionPostRecipe()
     }
 }
+// --------------------------------------------------------

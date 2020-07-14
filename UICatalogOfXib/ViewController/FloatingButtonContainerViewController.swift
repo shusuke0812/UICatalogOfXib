@@ -19,6 +19,7 @@ class FloatingButtonContainerViewController: UIViewController {
     }
 }
 
+// --- カスタムViewのタップイベントを元に実行するdelegateメソッド ---
 extension FloatingButtonContainerViewController {
     func transitionPostRecipe() {
         let s = UIStoryboard(name: "PostRecipeViewController", bundle: nil)
@@ -33,3 +34,4 @@ extension FloatingButtonContainerViewController: FloatingButtonDelegate {
         self.transitionPostRecipe()
     }
 }
+// --------------------------------------------------------

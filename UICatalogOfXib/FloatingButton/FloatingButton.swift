@@ -18,8 +18,8 @@ class FloatingButton: XibView {
     internal weak var delegate: FloatingButtonDelegate! = nil
     
     @IBAction func buttonTap(_ sender: Any) {
-        // ボタンをタップしたらそのことをdelegateへ伝える
-        // 継承元（viewController等）でdidTapImageメソッド内の処理は定義する
+        // ボタンをタップした後の処理はdelegateへ移譲する
+        // delegate protocolの継承元（viewController等）でdidTapImageメソッド内の処理は定義する
         self.delegate?.didTapButton()
     }
 }

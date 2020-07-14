@@ -26,8 +26,8 @@ class CommonCellView: XibView {
         self.setImageShape()
     }
     @IBAction func didTapCell(_ sender: Any) {
-        // セル全体をタップしたらそのことをdelegateへ伝える
-        // 継承元（viewController等）でdidTapImageメソッド内の処理は定義する
+        // セル全体をタップした後の処理はdelegateへ移譲する
+        // delegate protocolの継承元（viewController等）でdidTapImageメソッド内の処理は定義する
         self.delegate?.didTapImage()
     }
     
