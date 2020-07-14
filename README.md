@@ -20,6 +20,7 @@ Xibを使った実装例
 <table border="0">
 <tr>
 <td><img width="160" src="https://user-images.githubusercontent.com/33107697/87242340-b45e2b00-c466-11ea-98c3-0a0cfa682c02.gif"></td>
+<td><img width="160" src="https://user-images.githubusercontent.com/33107697/87370694-9e637e00-c5be-11ea-948d-39abce69ae38.gif"></td>
 </tr>
 </table>
   
