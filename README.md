@@ -27,7 +27,7 @@ Xibを使った実装例
 
 
 ### Memo
-UIImageでXibファイルを作るときは、  
+UIImageでXibファイル（カスタムView）を作るときは、  
 下記に示すイニシャライザ・Viewの読み込みをまとめたXibViewクラスを継承する  
   
 ```swift
