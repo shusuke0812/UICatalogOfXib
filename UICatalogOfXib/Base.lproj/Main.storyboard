@@ -230,11 +230,11 @@
             </objects>
             <point key="canvasLocation" x="1192.753623188406" y="1391.5178571428571"/>
         </scene>
-        <!--Scroll View-->
+        <!--scroll view-->
         <scene sceneID="ZJH-Ut-V9b">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d6l-pI-m61" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Scroll View" image="info.circle.fill" catalog="system" id="Mme-vL-7D1"/>
+                    <tabBarItem key="tabBarItem" title="scroll view" image="info.circle.fill" catalog="system" id="Mme-vL-7D1"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="whE-6F-T2p">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

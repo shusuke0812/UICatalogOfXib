@@ -10,6 +10,7 @@ import UIKit
 
 class NormalViewController: UIViewController {
 
+    // xibのデリゲートメソッドを実装するために必要な宣言
     @IBOutlet weak var commonCellView: CommonCellView!
     
     override func viewDidLoad() {
