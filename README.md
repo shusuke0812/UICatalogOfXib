@@ -24,11 +24,17 @@ Xibを使った実装例
 </tr>
 </table>
   
-
+### Xib View vs. Storyboard (ex. Modal Screen)
+<table border="0">
+<tr>
+<td>
+<td>
+</tr>
+</table>
 
 ### Memo
-UIViewでXibファイル（カスタムView）を作るときは、  
-下記に示すイニシャライザ・Viewの読み込みをまとめたXibViewクラスを継承する  
+- UIViewでXibファイル（カスタムView）を作るときは、  
+  下記に示すイニシャライザ・Viewの読み込みをまとめたXibViewクラスを継承する  
   
 ```swift
 class XibView: UIView {
@@ -50,3 +56,5 @@ class XibView: UIView {
     }
 }
 ```
+- XibとStoryboardのメリット・デメリット
+
