@@ -10,8 +10,9 @@ import UIKit
 
 class XibViewController: UIViewController {
 
-    private var transMessage: String
+    private let transMessage: String
     
+    // MARK: - Initializer
     required init?(coder: NSCoder) {
         fatalError("init(coder:)が実装されていません")
     }
@@ -20,7 +21,7 @@ class XibViewController: UIViewController {
         self.transMessage = msg
         super.init(nibName: nibName, bundle: bundle)
     }
-    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.showTransMessage()
