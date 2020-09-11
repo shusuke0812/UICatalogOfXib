@@ -27,8 +27,16 @@ Xibを使った実装例
 ### Xib View vs. Storyboard (ex. Modal Screen)
 <table border="0">
 <tr>
-<td>
-<td>
+<td><img width="160" src="https://user-images.githubusercontent.com/33107697/92861505-87150580-f434-11ea-9929-76e6ac4ec646.gif"></td>
+<td><img width="160" src="https://user-images.githubusercontent.com/33107697/92861238-356c7b00-f434-11ea-9924-6f5fa9232e2c.gif"></td>
+</tr>
+<tr>
+<td>・値渡し先のプロパティのnilチェックが必要<br>
+・値渡し先のプロパティはミュータブル／公開にする
+</td>
+<td>・値渡し先のプロパティのnilチェックが不要<br>
+・値渡し先のプロパティをいミュータブル／非公開にできる
+</td>
 </tr>
 </table>
 
@@ -56,5 +64,4 @@ class XibView: UIView {
     }
 }
 ```
-- XibとStoryboardのメリット・デメリット
 
