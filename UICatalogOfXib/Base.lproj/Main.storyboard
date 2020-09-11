@@ -300,10 +300,10 @@
             </objects>
             <point key="canvasLocation" x="1739" y="1583"/>
         </scene>
-        <!--View Controller-->
+        <!--Transition View Controller-->
         <scene sceneID="5Zq-zG-KBL">
             <objects>
-                <viewController id="7N2-gT-IAI" sceneMemberID="viewController">
+                <viewController id="7N2-gT-IAI" customClass="TransitionViewController" customModule="UICatalogOfXib" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7wp-UT-tuw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
