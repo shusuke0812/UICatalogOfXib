@@ -24,6 +24,7 @@ class TransitionViewController: UIViewController {
     @IBAction func transitionStoryboardButton(_ sender: Any) {
         let s: UIStoryboard = UIStoryboard(name: "StoryboardViewController", bundle: nil)
         let vc: StoryboardViewController = s.instantiateInitialViewController() as! StoryboardViewController
+        vc.transMessage = "Storyboard Modalボタンがタップされました"
         present(vc, animated: true, completion: nil)
     }
 }
