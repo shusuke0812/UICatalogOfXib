@@ -14,7 +14,21 @@
                     <view key="view" contentMode="scaleToFill" id="Pph-up-ewv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Storyboardを使ったModal Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viZ-rA-aoQ">
+                                <rect key="frame" x="10" y="437.5" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="viZ-rA-aoQ" firstAttribute="centerY" secondItem="Pph-up-ewv" secondAttribute="centerY" id="3kW-mw-UGJ"/>
+                            <constraint firstItem="viZ-rA-aoQ" firstAttribute="centerX" secondItem="Pph-up-ewv" secondAttribute="centerX" id="5sI-K4-MaD"/>
+                            <constraint firstItem="viZ-rA-aoQ" firstAttribute="leading" secondItem="6oB-rK-Jhc" secondAttribute="leading" constant="10" id="H65-c4-HSZ"/>
+                            <constraint firstItem="6oB-rK-Jhc" firstAttribute="trailing" secondItem="viZ-rA-aoQ" secondAttribute="trailing" constant="10" id="zqU-vH-L9M"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6oB-rK-Jhc"/>
                     </view>
                 </viewController>
