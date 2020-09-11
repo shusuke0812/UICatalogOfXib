@@ -17,7 +17,7 @@ class TransitionViewController: UIViewController {
     // MARK: -Action Method
     // Xibを使ったモーダル遷移
     @IBAction func transitionXibModalButton(_ sender: Any) {
-        let vc: XibViewController = XibViewController(nibName: "XibViewController", bundle: nil)
+        let vc: XibViewController = XibViewController(msg: "Xib Modalボタンがタップされました",nibName: "XibViewController", bundle: nil)
         present(vc, animated: true)
     }
     // Stroyboardを使ったモーダル遷移
