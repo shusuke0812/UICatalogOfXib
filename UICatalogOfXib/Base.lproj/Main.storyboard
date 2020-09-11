@@ -98,11 +98,29 @@
                         <segue destination="c1L-i0-ojh" kind="relationship" relationship="viewControllers" id="DMx-ji-R3z"/>
                         <segue destination="yFk-HM-nii" kind="relationship" relationship="viewControllers" id="k6S-ZR-6gP"/>
                         <segue destination="d6l-pI-m61" kind="relationship" relationship="viewControllers" id="ZYi-HB-MmS"/>
+                        <segue destination="gIQ-bQ-Dgw" kind="relationship" relationship="viewControllers" id="eKQ-0P-54q"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jWT-nD-G0A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-329" y="-180"/>
+        </scene>
+        <!--transition view-->
+        <scene sceneID="t1a-em-Rkj">
+            <objects>
+                <navigationController id="gIQ-bQ-Dgw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="transition view" image="info.circle" catalog="system" id="nw9-ic-fIX"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P0j-GU-AX8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7N2-gT-IAI" kind="relationship" relationship="rootViewController" id="YEa-Ah-JPO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lh6-WL-xAl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2336" y="546"/>
         </scene>
         <!--table view-->
         <scene sceneID="ESF-K2-09X">
@@ -281,6 +299,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFw-Nl-C2l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1739" y="1583"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5Zq-zG-KBL">
+            <objects>
+                <viewController id="7N2-gT-IAI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7wp-UT-tuw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOU-oE-RV8">
+                                <rect key="frame" x="50" y="328" width="314" height="50"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="b6x-0G-TEu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Modal Screen By Xib"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjZ-Xj-GUM">
+                                <rect key="frame" x="50" y="513" width="314" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3kK-DB-tsf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Modal Screen By Storyboard"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CjZ-Xj-GUM" firstAttribute="top" secondItem="zOU-oE-RV8" secondAttribute="bottom" constant="135" id="1re-JX-NAY"/>
+                            <constraint firstItem="XbM-pM-S3K" firstAttribute="trailing" secondItem="CjZ-Xj-GUM" secondAttribute="trailing" constant="50" id="BDu-aN-PQa"/>
+                            <constraint firstItem="zOU-oE-RV8" firstAttribute="leading" secondItem="XbM-pM-S3K" secondAttribute="leading" constant="50" id="aGq-3S-vAy"/>
+                            <constraint firstItem="XbM-pM-S3K" firstAttribute="trailing" secondItem="zOU-oE-RV8" secondAttribute="trailing" constant="50" id="cFR-r0-WR0"/>
+                            <constraint firstItem="zOU-oE-RV8" firstAttribute="top" secondItem="XbM-pM-S3K" secondAttribute="top" constant="240" id="ooG-9l-hmC"/>
+                            <constraint firstItem="CjZ-Xj-GUM" firstAttribute="leading" secondItem="XbM-pM-S3K" secondAttribute="leading" constant="50" id="tiy-cA-iYg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XbM-pM-S3K"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TQK-jL-ea7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHK-jb-cg1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2335" y="1290"/>
         </scene>
     </scenes>
     <resources>
