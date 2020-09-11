@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2dq-dB-Kx1">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -27,7 +27,7 @@
                             <constraint firstItem="viZ-rA-aoQ" firstAttribute="centerY" secondItem="Pph-up-ewv" secondAttribute="centerY" id="3kW-mw-UGJ"/>
                             <constraint firstItem="viZ-rA-aoQ" firstAttribute="centerX" secondItem="Pph-up-ewv" secondAttribute="centerX" id="5sI-K4-MaD"/>
                             <constraint firstItem="viZ-rA-aoQ" firstAttribute="leading" secondItem="6oB-rK-Jhc" secondAttribute="leading" constant="10" id="H65-c4-HSZ"/>
-                            <constraint firstItem="6oB-rK-Jhc" firstAttribute="trailing" secondItem="viZ-rA-aoQ" secondAttribute="trailing" constant="10" id="zqU-vH-L9M"/>
+                            <constraint firstItem="6oB-rK-Jhc" firstAttribute="trailing" secondItem="viZ-rA-aoQ" secondAttribute="trailing" constant="10" id="YRO-d6-rcj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6oB-rK-Jhc"/>
                     </view>
