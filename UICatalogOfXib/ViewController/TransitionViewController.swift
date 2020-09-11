@@ -13,4 +13,8 @@ class TransitionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    @IBAction func transitionXibModalButton(_ sender: Any) {
+    }
+    @IBAction func transitionStoryboardButton(_ sender: Any) {
+    }
 }

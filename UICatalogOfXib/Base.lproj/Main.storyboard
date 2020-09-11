@@ -317,6 +317,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Modal Screen By Xib"/>
+                                <connections>
+                                    <action selector="transitionXibModalButton:" destination="7N2-gT-IAI" eventType="touchUpInside" id="2KD-qZ-a2k"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjZ-Xj-GUM">
                                 <rect key="frame" x="50" y="513" width="314" height="50"/>
@@ -327,6 +330,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Modal Screen By Storyboard"/>
+                                <connections>
+                                    <action selector="transitionStoryboardButton:" destination="7N2-gT-IAI" eventType="touchUpInside" id="gAZ-oI-RR5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
