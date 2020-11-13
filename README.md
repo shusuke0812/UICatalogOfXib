@@ -13,6 +13,7 @@ Xibを使った実装例
 <td><img width="300" src="https://user-images.githubusercontent.com/33107697/87175266-61279380-c313-11ea-91df-442b0c0e05a7.png"></td>
 <td><img width="300" src="https://user-images.githubusercontent.com/33107697/87175384-87e5ca00-c313-11ea-8142-2e3b950ea6a1.png"></td>
 <td><img width="300" src="https://user-images.githubusercontent.com/33107697/87220749-a72b3880-c3a1-11ea-915e-96e5c2f77b41.png"></td>
+<td><img width="255" src="https://user-images.githubusercontent.com/33107697/99076147-08884000-25fe-11eb-8d29-69a457807499.png"></td>
 </tr>
 </table>
   
