@@ -9,9 +9,16 @@
 import UIKit
 
 class CollectionViewController: UIViewController {
+    
+    /// BaseView
+    private var baseView: CollectionBaseView { self.view as! CollectionBaseView }
+    /// ViewModel
+    private var viewModel: CollectionViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.viewModel = CollectionViewModel()
+        self.setDelegateDataSource()
         self.setUI()
     }
 }
@@ -19,6 +26,13 @@ class CollectionViewController: UIViewController {
 extension CollectionViewController {
     private func setUI() {
         // ナビゲーションタイトル設定
-        self.navigationItem.title = "Xib Filed on Collection View"
+        self.navigationItem.title = "Xib Files on Collection View"
     }
+    private func setDelegateDataSource() {
+        self.baseView.collectionView.delegate = self
+        self.baseView.collectionView.dataSource = self.viewModel
+    }
+}
+// MARK: - CollectionView Delegate Method
+extension CollectionViewController: UICollectionViewDelegate {
 }

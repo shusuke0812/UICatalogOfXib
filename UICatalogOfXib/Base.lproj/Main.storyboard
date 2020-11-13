@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -378,7 +377,7 @@
         <scene sceneID="5kb-Dg-TW7">
             <objects>
                 <viewController id="oJP-fq-g70" customClass="CollectionViewController" customModule="UICatalogOfXib" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lWe-QB-u06">
+                    <view key="view" contentMode="scaleToFill" id="lWe-QB-u06" customClass="CollectionBaseView" customModule="UICatalogOfXib" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -391,16 +390,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="op7-Gq-fTJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TzU-XA-sMR">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sT1-2l-owZ"/>
@@ -411,6 +401,10 @@
                             <constraint firstItem="sT1-2l-owZ" firstAttribute="trailing" secondItem="0s2-h3-DjH" secondAttribute="trailing" id="YTH-Zg-sdI"/>
                             <constraint firstItem="0s2-h3-DjH" firstAttribute="top" secondItem="sT1-2l-owZ" secondAttribute="top" id="cGs-hI-z51"/>
                         </constraints>
+                        <connections>
+                            <outlet property="collectionView" destination="0s2-h3-DjH" id="fl7-nm-Szg"/>
+                            <outlet property="flowLayout" destination="hqO-WL-QIK" id="abz-nR-ltV"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Rak-JQ-aBL"/>
                 </viewController>
