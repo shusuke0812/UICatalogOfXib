@@ -12,5 +12,13 @@ class CollectionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setUI()
+    }
+}
+// MARK: - Initialized Method
+extension CollectionViewController {
+    private func setUI() {
+        // ナビゲーションタイトル設定
+        self.navigationItem.title = "Xib Filed on Collection View"
     }
 }
