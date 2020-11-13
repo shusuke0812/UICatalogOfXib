@@ -16,6 +16,9 @@
 		9C5435BF250A6EDF00EEC7F0 /* StoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C5435BE250A6EDF00EEC7F0 /* StoryboardViewController.storyboard */; };
 		9C8A24FD24B9B301007F0D8E /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8A24FC24B9B301007F0D8E /* ScrollViewController.swift */; };
 		9C8C73CB250B0DF3003059F4 /* TransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8C73CA250B0DF3003059F4 /* TransitionViewController.swift */; };
+		9C8CF2D1255E4FAA00810E43 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CF2D0255E4FAA00810E43 /* CollectionViewController.swift */; };
+		9C8CF2D7255E50B900810E43 /* CommonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CF2D5255E50B900810E43 /* CommonCollectionViewCell.swift */; };
+		9C8CF2D8255E50B900810E43 /* CommonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C8CF2D6255E50B900810E43 /* CommonCollectionViewCell.xib */; };
 		9C96684124BAEF1D00598AD9 /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C96684024BAEF1D00598AD9 /* FloatingButton.swift */; };
 		9C96684324BAEF3B00598AD9 /* FloatingButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C96684224BAEF3B00598AD9 /* FloatingButton.xib */; };
 		9C9871C624B874AA00BD30A4 /* CommonCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9871C424B874AA00BD30A4 /* CommonCellView.swift */; };
@@ -62,6 +65,9 @@
 		9C5435BE250A6EDF00EEC7F0 /* StoryboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardViewController.storyboard; sourceTree = "<group>"; };
 		9C8A24FC24B9B301007F0D8E /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		9C8C73CA250B0DF3003059F4 /* TransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionViewController.swift; sourceTree = "<group>"; };
+		9C8CF2D0255E4FAA00810E43 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		9C8CF2D5255E50B900810E43 /* CommonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCollectionViewCell.swift; sourceTree = "<group>"; };
+		9C8CF2D6255E50B900810E43 /* CommonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonCollectionViewCell.xib; sourceTree = "<group>"; };
 		9C96684024BAEF1D00598AD9 /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 		9C96684224BAEF3B00598AD9 /* FloatingButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FloatingButton.xib; sourceTree = "<group>"; };
 		9C9871C424B874AA00BD30A4 /* CommonCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCellView.swift; sourceTree = "<group>"; };
@@ -136,6 +142,8 @@
 				9C9871C524B874AA00BD30A4 /* CommonCellView.xib */,
 				9C17189924B8B5BD002307F1 /* CommonTableViewCell.swift */,
 				9C17189A24B8B5BD002307F1 /* CommonTableViewCell.xib */,
+				9C8CF2D5255E50B900810E43 /* CommonCollectionViewCell.swift */,
+				9C8CF2D6255E50B900810E43 /* CommonCollectionViewCell.xib */,
 				9C39651824B9FB200048AE3B /* XibView.swift */,
 			);
 			path = Cells;
@@ -218,6 +226,7 @@
 				9C5435B7250A6E8E00EEC7F0 /* XibViewController.swift */,
 				9C5435BC250A6ECF00EEC7F0 /* StoryboardViewController.swift */,
 				9C8C73CA250B0DF3003059F4 /* TransitionViewController.swift */,
+				9C8CF2D0255E4FAA00810E43 /* CollectionViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -333,6 +342,7 @@
 				9C5435BF250A6EDF00EEC7F0 /* StoryboardViewController.storyboard in Resources */,
 				9C9871C724B874AA00BD30A4 /* CommonCellView.xib in Resources */,
 				9CC228AE24B8638400F8421A /* Assets.xcassets in Resources */,
+				9C8CF2D8255E50B900810E43 /* CommonCollectionViewCell.xib in Resources */,
 				9CC228AC24B8638000F8421A /* Main.storyboard in Resources */,
 				9C96684324BAEF3B00598AD9 /* FloatingButton.xib in Resources */,
 			);
@@ -363,12 +373,14 @@
 				9CB6BEE724BCB73E0022336C /* FloatingButtonContainerViewController.swift in Sources */,
 				9CC228A924B8638000F8421A /* ViewController.swift in Sources */,
 				9C9871C624B874AA00BD30A4 /* CommonCellView.swift in Sources */,
+				9C8CF2D1255E4FAA00810E43 /* CollectionViewController.swift in Sources */,
 				9C17189B24B8B5BD002307F1 /* CommonTableViewCell.swift in Sources */,
 				9CB6BEE524BC7CC10022336C /* PostRecipeViewControllerViewController.swift in Sources */,
 				9C5435B9250A6E8E00EEC7F0 /* XibViewController.swift in Sources */,
 				9C8A24FD24B9B301007F0D8E /* ScrollViewController.swift in Sources */,
 				9CC228D624B86A8400F8421A /* NormalViewController.swift in Sources */,
 				9CC228A524B8638000F8421A /* AppDelegate.swift in Sources */,
+				9C8CF2D7255E50B900810E43 /* CommonCollectionViewCell.swift in Sources */,
 				9C5435BD250A6ECF00EEC7F0 /* StoryboardViewController.swift in Sources */,
 				9CC228D824B86A9600F8421A /* TableViewController.swift in Sources */,
 				9C96684124BAEF1D00598AD9 /* FloatingButton.swift in Sources */,
