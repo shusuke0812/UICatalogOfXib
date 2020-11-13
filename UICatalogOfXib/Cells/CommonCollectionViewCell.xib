@@ -20,7 +20,59 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Tx-ev-8uL">
                         <rect key="frame" x="0.0" y="0.0" width="160" height="240"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tonjiru" translatesAutoresizingMaskIntoConstraints="NO" id="TdB-lL-cWb">
+                                <rect key="frame" x="8" y="5" width="144" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="10D-C7-POL"/>
+                                    <constraint firstAttribute="width" constant="144" id="1BC-KS-BJa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="豚汁の作り方" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRX-ei-Mv8">
+                                <rect key="frame" x="8" y="157" width="144" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="長ネギの甘味を活かした豚汁づくり！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxQ-eU-Vdl">
+                                <rect key="frame" x="8" y="174" width="144" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inco" translatesAutoresizingMaskIntoConstraints="NO" id="jkd-MS-mtq">
+                                <rect key="frame" x="8" y="211" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="HFw-68-DHK"/>
+                                    <constraint firstAttribute="width" constant="20" id="LUk-tv-6dn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自炊屋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91z-kN-9dm">
+                                <rect key="frame" x="36" y="214" width="116" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CRX-ei-Mv8" firstAttribute="top" secondItem="TdB-lL-cWb" secondAttribute="bottom" constant="8" id="3vF-9W-ysi"/>
+                            <constraint firstAttribute="trailing" secondItem="CRX-ei-Mv8" secondAttribute="trailing" constant="8" id="4Q6-1O-quq"/>
+                            <constraint firstItem="91z-kN-9dm" firstAttribute="top" secondItem="bxQ-eU-Vdl" secondAttribute="bottom" constant="11" id="6Rn-V8-1id"/>
+                            <constraint firstItem="CRX-ei-Mv8" firstAttribute="leading" secondItem="1Tx-ev-8uL" secondAttribute="leading" constant="8" id="7dN-Ug-lmx"/>
+                            <constraint firstAttribute="bottom" secondItem="jkd-MS-mtq" secondAttribute="bottom" constant="9" id="ArP-QL-bHM"/>
+                            <constraint firstItem="jkd-MS-mtq" firstAttribute="top" secondItem="bxQ-eU-Vdl" secondAttribute="bottom" constant="8" symbolic="YES" id="IHf-pZ-gAa"/>
+                            <constraint firstItem="jkd-MS-mtq" firstAttribute="leading" secondItem="1Tx-ev-8uL" secondAttribute="leading" constant="8" id="NHh-V8-422"/>
+                            <constraint firstItem="bxQ-eU-Vdl" firstAttribute="top" secondItem="CRX-ei-Mv8" secondAttribute="bottom" constant="5" id="NZa-XL-gfU"/>
+                            <constraint firstItem="bxQ-eU-Vdl" firstAttribute="leading" secondItem="1Tx-ev-8uL" secondAttribute="leading" constant="8" id="Ogd-C9-xgx"/>
+                            <constraint firstAttribute="bottom" secondItem="91z-kN-9dm" secondAttribute="bottom" constant="11" id="Zsa-Cf-MHn"/>
+                            <constraint firstAttribute="trailing" secondItem="91z-kN-9dm" secondAttribute="trailing" constant="8" id="bE6-f6-jua"/>
+                            <constraint firstItem="TdB-lL-cWb" firstAttribute="leading" secondItem="1Tx-ev-8uL" secondAttribute="leading" constant="8" id="daZ-33-we7"/>
+                            <constraint firstAttribute="trailing" secondItem="bxQ-eU-Vdl" secondAttribute="trailing" constant="8" id="hhH-LG-eNP"/>
+                            <constraint firstAttribute="trailing" secondItem="TdB-lL-cWb" secondAttribute="trailing" constant="8" id="kHL-EY-vnI"/>
+                            <constraint firstItem="91z-kN-9dm" firstAttribute="leading" secondItem="jkd-MS-mtq" secondAttribute="trailing" constant="8" symbolic="YES" id="q1W-bl-Kqa"/>
+                            <constraint firstItem="TdB-lL-cWb" firstAttribute="top" secondItem="1Tx-ev-8uL" secondAttribute="top" constant="5" id="sUn-o2-yXt"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
@@ -36,6 +88,11 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="inco" width="260" height="260"/>
+        <image name="tonjiru" width="1600" height="1059"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
