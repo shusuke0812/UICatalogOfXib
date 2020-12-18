@@ -21,6 +21,8 @@ class CollectionBaseView: UIView {
 // MARK: - Set UI Method
 extension CollectionBaseView {
     internal func setUI() {
+        self.flowLayout.estimatedItemSize = .zero
         self.collectionView.register(UINib(nibName: "CommonCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CommonCollectionViewCell")
     }
 }
+

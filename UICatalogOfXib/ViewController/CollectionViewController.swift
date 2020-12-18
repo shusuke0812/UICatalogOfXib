@@ -36,3 +36,11 @@ extension CollectionViewController {
 // MARK: - CollectionView Delegate Method
 extension CollectionViewController: UICollectionViewDelegate {
 }
+// MARK: - UICollectionView Delegate FlowLayout Method
+extension CollectionViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let horizontalSapece: CGFloat = 2.0
+        let cellSize: CGFloat = self.baseView.bounds.width / 2 - horizontalSapece
+        return CGSize(width: cellSize, height: cellSize)
+    }
+}
