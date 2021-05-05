@@ -12,6 +12,13 @@ class CollectionViewModel: NSObject {
     /// セルのID
     private(set)  var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 }
+// MARK: - Setting Data Method
+extension CollectionViewModel {
+    func updateItemsWhenDrangAndDropCell(destinationIndexPath: IndexPath, sourceIndexPath: IndexPath) {
+        let soucerItem = self.items.remove(at: sourceIndexPath.item)
+        self.items.insert(soucerItem, at: destinationIndexPath.item)
+    }
+}
 // MARK: - CollectionView DataSource
 extension CollectionViewModel: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {

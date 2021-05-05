@@ -31,10 +31,47 @@ extension CollectionViewController {
     private func setDelegateDataSource() {
         self.baseView.collectionView.delegate = self
         self.baseView.collectionView.dataSource = self.viewModel
+        self.baseView.collectionView.dropDelegate = self
+        self.baseView.collectionView.dragDelegate = self
     }
 }
 // MARK: - CollectionView Delegate Method
 extension CollectionViewController: UICollectionViewDelegate {
+}
+extension CollectionViewController: UICollectionViewDragDelegate {
+    func collectionView(_ collectionView: UICollectionView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
+        let index = indexPath.row.description as NSString
+        let itemProvider = NSItemProvider(object: index)
+        let dragItem = UIDragItem(itemProvider: itemProvider)
+        return [dragItem]
+    }
+}
+extension CollectionViewController: UICollectionViewDropDelegate {
+    func collectionView(_ collectionView: UICollectionView, performDropWith coordinator: UICollectionViewDropCoordinator) {
+        switch coordinator.proposal.operation {
+        case .move:
+            guard
+                let destinationIndexPath = coordinator.destinationIndexPath,
+                let sourceIndexPath = coordinator.items.first?.sourceIndexPath
+            else { return }
+            self.baseView.collectionView.performBatchUpdates({
+                self.viewModel.updateItemsWhenDrangAndDropCell(destinationIndexPath: destinationIndexPath, sourceIndexPath: sourceIndexPath)
+                self.baseView.collectionView.deleteItems(at: [sourceIndexPath])
+                self.baseView.collectionView.insertItems(at: [destinationIndexPath])
+            })
+        case .cancel, .forbidden, .copy:
+            return
+        @unknown default:
+            fatalError()
+        }
+    }
+    func collectionView(_ collectionView: UICollectionView, dropSessionDidUpdate session: UIDropSession, withDestinationIndexPath destinationIndexPath: IndexPath?) -> UICollectionViewDropProposal {
+        if session.localDragSession != nil {
+            return UICollectionViewDropProposal(operation: .move, intent: .insertAtDestinationIndexPath)
+        } else {
+            return UICollectionViewDropProposal(operation: .cancel)
+        }
+    }
 }
 // MARK: - UICollectionView Delegate FlowLayout Method
 extension CollectionViewController: UICollectionViewDelegateFlowLayout {
