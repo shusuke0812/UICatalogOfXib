@@ -9,6 +9,8 @@
 import UIKit
 
 class CollectionViewModel: NSObject {
+    /// セルのID
+    private(set)  var items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 }
 // MARK: - CollectionView DataSource
 extension CollectionViewModel: UICollectionViewDataSource {
@@ -16,11 +18,11 @@ extension CollectionViewModel: UICollectionViewDataSource {
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return items.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CommonCollectionViewCell", for: indexPath) as! CommonCollectionViewCell
-        cell.setIndexLabel(index: indexPath.row)
+        cell.setIndexLabel(index: items[indexPath.row])
         return cell
     }
 }
