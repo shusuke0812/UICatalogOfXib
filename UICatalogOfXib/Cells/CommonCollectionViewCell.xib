@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -44,7 +44,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自炊屋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91z-kN-9dm">
-                                <rect key="frame" x="36" y="214" width="116" height="15"/>
+                                <rect key="frame" x="36" y="214" width="37" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0J-Vi-bS1">
+                                <rect key="frame" x="78" y="214" width="8" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -58,14 +64,16 @@
                             <constraint firstItem="CRX-ei-Mv8" firstAttribute="leading" secondItem="1Tx-ev-8uL" secondAttribute="leading" constant="8" id="7dN-Ug-lmx"/>
                             <constraint firstAttribute="bottom" secondItem="jkd-MS-mtq" secondAttribute="bottom" constant="9" id="ArP-QL-bHM"/>
                             <constraint firstItem="jkd-MS-mtq" firstAttribute="top" secondItem="bxQ-eU-Vdl" secondAttribute="bottom" constant="8" symbolic="YES" id="IHf-pZ-gAa"/>
+                            <constraint firstItem="I0J-Vi-bS1" firstAttribute="leading" secondItem="91z-kN-9dm" secondAttribute="trailing" constant="5" id="IyK-Im-p3o"/>
                             <constraint firstItem="jkd-MS-mtq" firstAttribute="leading" secondItem="1Tx-ev-8uL" secondAttribute="leading" constant="8" id="NHh-V8-422"/>
                             <constraint firstItem="bxQ-eU-Vdl" firstAttribute="top" secondItem="CRX-ei-Mv8" secondAttribute="bottom" constant="5" id="NZa-XL-gfU"/>
                             <constraint firstItem="bxQ-eU-Vdl" firstAttribute="leading" secondItem="1Tx-ev-8uL" secondAttribute="leading" constant="8" id="Ogd-C9-xgx"/>
                             <constraint firstAttribute="bottom" secondItem="91z-kN-9dm" secondAttribute="bottom" constant="11" id="Zsa-Cf-MHn"/>
-                            <constraint firstAttribute="trailing" secondItem="91z-kN-9dm" secondAttribute="trailing" constant="8" id="bE6-f6-jua"/>
                             <constraint firstItem="TdB-lL-cWb" firstAttribute="leading" secondItem="1Tx-ev-8uL" secondAttribute="leading" constant="8" id="daZ-33-we7"/>
                             <constraint firstAttribute="trailing" secondItem="bxQ-eU-Vdl" secondAttribute="trailing" constant="8" id="hhH-LG-eNP"/>
+                            <constraint firstAttribute="bottom" secondItem="I0J-Vi-bS1" secondAttribute="bottom" constant="11" id="k6s-u6-0u6"/>
                             <constraint firstAttribute="trailing" secondItem="TdB-lL-cWb" secondAttribute="trailing" constant="8" id="kHL-EY-vnI"/>
+                            <constraint firstItem="I0J-Vi-bS1" firstAttribute="top" secondItem="bxQ-eU-Vdl" secondAttribute="bottom" constant="11" id="mdT-tu-S5G"/>
                             <constraint firstItem="91z-kN-9dm" firstAttribute="leading" secondItem="jkd-MS-mtq" secondAttribute="trailing" constant="8" symbolic="YES" id="q1W-bl-Kqa"/>
                             <constraint firstItem="TdB-lL-cWb" firstAttribute="top" secondItem="1Tx-ev-8uL" secondAttribute="top" constant="5" id="sUn-o2-yXt"/>
                         </constraints>
@@ -82,6 +90,7 @@
             <size key="customSize" width="207" height="50"/>
             <connections>
                 <outlet property="imageView" destination="TdB-lL-cWb" id="uE5-1z-1Ef"/>
+                <outlet property="indexLabel" destination="I0J-Vi-bS1" id="ARn-b9-owL"/>
             </connections>
             <point key="canvasLocation" x="223" y="111"/>
         </collectionViewCell>

@@ -20,6 +20,7 @@ extension CollectionViewModel: UICollectionViewDataSource {
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CommonCollectionViewCell", for: indexPath) as! CommonCollectionViewCell
+        cell.setIndexLabel(index: indexPath.row)
         return cell
     }
 }
