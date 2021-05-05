@@ -24,6 +24,13 @@ Xibを使った実装例
 <td><img width="160" src="https://user-images.githubusercontent.com/33107697/87370694-9e637e00-c5be-11ea-948d-39abce69ae38.gif"></td>
 </tr>
 </table>
+
+### Moving Collection View Cell with Drag and Drop
+<table border="0">
+<tr>
+<td><img width="160" src="https://user-images.githubusercontent.com/33107697/117151571-2d62b080-adf4-11eb-8997-8c980109d320.gif"></td>
+</tr>
+</table>
   
 ### Xib View vs. Storyboard (ex. Modal Screen)
 <table border="0">
